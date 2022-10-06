@@ -1,0 +1,186 @@
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins, sans-serif';
+}
+
+.hero{
+    width: 80%;
+    min-height: 100vh;
+    background-image: url(socially/back-image.png);
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    position: relative;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 30px;
+    position: relative;
+}
+
+nav ul li{
+    float: left;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #333;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 15px;
+    padding: 8px 15px;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+nav ul ul li a{
+    line-height: 25px;
+}
+
+nav ul li a:hover{
+    color: #df4881;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #df4881, 0 0 5px  #c430d7;
+}
+
+
+nav ul ul ul li li li a:hover{
+    color: #df4881;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #df4881, 0 0 5px  #c430d7;
+}
+
+.logo{
+    width: 140px;
+}
+
+.login-btn{
+    text-decoration: none;
+    margin-right: 15px;
+    color: #333;
+    font-weight: 400;
+}
+
+.login-btn:hover{
+    color: #df4881;
+    width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 30px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 1s;
+}
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h1{
+    font-size: 40px;
+    color: #222;
+}
+
+.content p{
+    margin: 10px 0 30px;
+    color: #333;
+    font-size: 17px;
+    animation-delay: 0.5s;
+}
+
+.content h1 span{
+    color: #df4881;
+}
+
+.content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+
+}
+
+.feature-img{
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.feature-img.anim{
+    animation-delay: 1.5s;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+nav .fa{
+    margin-right: 6px;
+}
+
+
+
